@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="state">
+        <!--<item>Select state</item>
+        <item>None</item>-->
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+
+    <string-array name="streetDirection">
+        <item>East</item>
+        <item>South</item>
+        <item>West</item>
+        <item>North</item>
+       <!-- <item>None</item>-->
+    </string-array>
+
+    <string-array name="streetType">
+       <!-- <item>Select street type</item>-->
+
+       <!-- <option value="" selected="selected"></option>
+        <option value="ave">Avenue</option>
+        <option value="st">Street</option>
+        <option value="blvd">Boulevard</option>
+        <option value="rd">Road</option>
+        <option value="pl">Place</option>
+        <option value="cir">Circle</option>
+        <option value="hwy">Highway</option>
+        <option value="ln">Lane</option>
+        <option value="PWY">Parkway</option>
+        <option value="ter">Terrace</option>
+        <option value="trl">Trail</option>
+        <option value="ct">Court</option>
+        <option value="dr">Drive</option>-->
+
+        <item>Avenue</item>
+        <item>Street</item>
+        <item>Boulevard</item>
+        <item>Road</item>
+        <item>Place</item>
+        <item>Circle</item>
+        <item>Highway</item>
+        <item>Lane</item>
+        <item>Parkway</item>
+        <item>Terrace</item>
+        <item>Trail</item>
+        <item>Court</item>
+        <item>Drive</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>Select language</item>
+        <item>English</item>
+        <item>普通话</item>
+        <item>广东话</item>
+        <item>台山话</item>
+        <item>Dont Know</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Select gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="recruitment">
+        <!--<item>Select recruitment</item>-->
+        <item>Dr. Dongs patient</item>
+        <item>Focus group (RO3)</item>
+        <item>Referred by a participant</item>
+        <item>Education sessions</item>
+        <item>Door to door census</item>
+        <item>CCBA</item>
+        <item>CASL Program - IHS</item>
+        <item>CASL Program - Pine Tree</item>
+        <item>CASL Program - ADS</item>
+        <item>Advertisement</item>
+        <item>St Therese</item>
+        <item>MAHA</item>
+        <item>Northwestern</item>
+        <item>SN project-Senior</item>
+        <item>SN project-Family member</item>
+        <item>XiLin</item>
+        <item>Bread for Life Church, Evanston</item>
+        <item>Hyde Park senior group</item>
+        <item>Chinese Mutual Aid Association</item>
+        <item>South-East Asia Center</item>
+        <item>Benton House</item>
+        <item>From Seniors</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="bornCountry">
+        <!--<item>Select state</item>
+        <item>None</item>-->
+
+        <item>Mainland China</item>
+        <item>Hong Kong/Macau</item>
+        <item>Taiwan</item>
+        <item>Malaysia</item>
+        <item>Singapore</item>
+        <item>Philippines</item>
+        <item>Thailand</item>
+        <item>Vietnam</item>
+        <item>USA</item>
+        <item>Canada</item>
+        <item>Other</item>
+
+    </string-array>
+</resources>

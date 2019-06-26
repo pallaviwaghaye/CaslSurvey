@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Casl Survey</string>
+    <string name="title_activity_interview_scroll">InterviewScrollActivity</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <item name="parent" type="id" />
+    <item name="question" type="id" />
+    <item name="position" type="id" />
+    <item name="trigger" type="id" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="radio_id">radioId</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">User Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This user name or password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."
+    </string>
+    <string name="progressSaving">同步正在进行中</string>
+    <string name="first_name">名</string>
+    <string name="last_name">姓</string>
+    <string name="address">街道地址</string>
+    <string name="state">州</string>
+    <string name="city">市</string>
+    <string name="cellPhone">手機號碼</string>
+    <string name="homephone">家庭電話</string>
+    <string name="workphone">工作電話</string>
+    <string name="email">电子邮件</string>
+    <string name="lang_prefR">Language Preference Read</string>
+    <string name="lang_canR">Langauage Ability Read</string>
+    <string name="birthday">出生日期</string>
+    <string name="missSSN">SSN是否缺失</string>
+    <string name="chinese_name">中文姓名</string>
+    <string name="sheng">省</string>
+    <string name="shi">市</string>
+    <string name="xingzhengqu">行政區</string>
+    <string name="jiedao">街道</string>
+    <string name="shequ">社區</string>
+    <string name="xiangxi">詳細</string>
+    <string name="reload">刷新问卷</string>
+    <string name="createInterview">创建新访问</string>
+    <string name="upload">上传采访</string>
+    <string name="delete">删除</string>
+    <string name="edit">进入此访问</string>
+    <string name="save">保存并返回</string>
+    <string name="gender">性別</string>
+    <string name="version">CHAP 1.3</string>
+    <string name="comment">评论</string>
+    <string name="bornCountry">出生國</string>
+    <string name="recruitment">招聘</string>
+    <string name="group">社会群体</string>
+    <string name="uploaded">上传</string>
+    <string name="uploadpending">上传待定</string>
+    <string name="EditOrUploadInterview">编辑或上传面试？</string>
+    <string name="UploadOrDeleteInterview">上传或删除面试?</string>
+    <string name="note">注意：删除操作仅从应用程序本地数据库中删除数据。</string>
+    <string name="thankYou">谢谢</string>
+    <string name="addParticipant">添加参与者</string>
+
+    <string-array name="langSpeak_arrays">
+        <item>English</item>
+        <item>普通話</item> <!--Mandarin-->
+        <item>廣東話</item> <!--Cantonese-->
+        <item>台山話</item> <!--Taishan dialect-->
+        <item>हिंदी</item>
+    </string-array>
+    <string-array name="langRW_arrays">
+        <item>English</item>
+        <item>简体中文</item> <!--Simplified Chinese-->
+        <item>繁體中文</item> <!--traditional Chinese-->
+        <item>हिंदी</item>
+    </string-array>
+</resources>

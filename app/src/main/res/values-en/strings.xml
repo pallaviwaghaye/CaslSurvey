@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Casl Survey</string>
+    <string name="edit">edit</string>
+    <string name="progressSaving">Synching in progress</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="address">Street Address</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="cellPhone">Cell Phone</string>
+    <string name="homephone">Home Phone</string>
+    <string name="workphone">Work Phone</string>
+    <string name="email">Email</string>
+    <string name="lang_prefR">Language Preference Read</string>
+    <string name="lang_canR">Langauage Ability Read</string>
+    <string name="birthday">DOB</string>
+    <string name="missSSN">Is SSN missing?</string>
+    <string name="chinese_name">Chinese Name</string>
+    <string name="sheng">State</string>
+    <string name="shi">City</string>
+    <string name="xingzhengqu">Street Type</string>
+    <string name="jiedao">Street Number</string>
+    <string name="shequ">Street Direction</string>
+    <string name="xiangxi">Street Name</string>
+    <string name="reload">Reload</string>
+    <string name="createInterview">Create Interview</string>
+    <string name="upload">Upload Interview</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save &amp; Go Back</string>
+    <string name="gender">Gender</string>
+    <string name="comment">Comment</string>
+    <string name="bornCountry">Country of birth</string>
+    <string name="recruitment">Recruitment</string>
+    <string name="group">Social Group</string>
+    <string name="version">CHAP 1.3</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="uploadpending">Pending Upload</string>
+    <string name="EditOrUploadInterview">Edit or Upload Interview?</string>
+    <string name="UploadOrDeleteInterview">Upload or Delete Interview?</string>
+    <string name="note">Note: Delete action will only remove data from apps local database.</string>
+    <string name="thankYou">Thank You</string>
+    <string name="addParticipant">Add Participant</string>
+
+
+
+</resources>

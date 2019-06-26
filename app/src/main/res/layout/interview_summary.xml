@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="22dp"
+    android:layout_marginRight="20dp"
+    android:padding="7dp"
+    android:orientation="vertical">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+    <TextView android:id="@android:id/text2"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+    <TextView android:id="@+id/text4"
+        android:textSize="18sp"
+        android:layout_gravity="right|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/text3"
+        android:textSize="16sp"
+        android:textColor="@color/brown"
+        android:layout_gravity="left|center"
+        android:text="&#9776;"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</android.support.v7.widget.CardView>

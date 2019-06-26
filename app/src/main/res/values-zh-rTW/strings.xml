@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Casl Survey</string>
+    <string name="address">街道地址</string>
+    <string name="progressSaving">同步正在進行中</string>
+    <string name="first_name">名字</string>
+    <string name="last_name">姓</string>
+    <string name="state">州</string>
+    <string name="city">市</string>
+    <string name="cellPhone">手機</string>
+    <string name="homephone">家庭電話</string>
+    <string name="workphone">工作電話</string>
+    <string name="email">電子郵件</string>
+    <string name="birthday">出生日期</string>
+    <string name="missSSN">SSN是否缺失</string>
+    <string name="chinese_name">中文名</string>
+    <string name="sheng">州</string>
+    <string name="shi">"市 "</string>
+    <string name="xingzhengqu">街道類型</string>
+    <string name="jiedao">街牌號碼</string>
+    <string name="shequ">街道方向</string>
+    <string name="xiangxi">街道名稱</string>
+    <string name="reload">刷新</string>
+    <string name="createInterview">創建面試</string>
+    <string name="bornCountry">出生國</string>
+    <string name="recruitment">招聘</string>
+    <string name="group">社會群體</string>
+    <string name="comment">評論</string>
+    <string name="delete">刪除</string>
+    <string name="upload">上傳訪談</string>
+    <string name="gender">性別</string>
+    <string name="edit">編輯</string>
+    <string name="save">"保存並返回 "</string>
+    <string name="uploaded">上傳</string>
+    <string name="uploadpending">上傳待定</string>
+    <string name="EditOrUploadInterview">編輯或上傳面試？</string>
+    <string name="UploadOrDeleteInterview">上傳或刪除面試?</string>
+    <string name="note">注意：刪除操作僅從應用程序本地數據庫中刪除數據。</string>
+    <string name="thankYou">謝謝</string>
+    <string name="addParticipant">添加參與者</string>
+</resources>
