@@ -8,6 +8,7 @@
     <color name="colorAccent">#27a47a</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="newblack">#6F6C6C</color>
     <color name="yellow">#ffc107</color>
     <color name="faint_yellow">#f4e868</color>
     <color name="orange">#ec8c1e</color>

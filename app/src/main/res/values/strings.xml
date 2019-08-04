@@ -72,6 +72,23 @@
     <string name="thankYou">谢谢</string>
     <string name="addParticipant">添加参与者</string>
 
+    <string name="contactform">联系表</string>
+    <string name="contactDate">联系日期 :</string>
+    <string name="contactTime">联系时间 :</string>
+    <string name="typeOfContact">联系方式 :</string>
+    <string name="PurposeofContact">联系目的 :</string>
+    <string name="ScheduledDate">约定的日期 :</string>
+    <string name="ScheduledTime">计划的时间 :</string>
+    <string name="InterviewMethod">面试方法 :</string>
+    <string name="formComment">表格评论 :</string>
+    <string name="submit">提交</string>
+    <string name="gotohome">回家</string>
+    <string name="yes">是</string>
+    <string name="no">没有</string>
+    <string name="dontknow">不知道</string>
+    <string name="refusal">拒绝</string>
+    <string name="reset">重启</string>
+
     <string-array name="langSpeak_arrays">
         <item>English</item>
         <item>普通話</item> <!--Mandarin-->

@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -28,6 +29,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -384,7 +386,14 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 super.onFailure(statusCode, headers, responseString, throwable);
-                Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),throwable.getMessage(),Snackbar.LENGTH_LONG);
+                Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),"Update is still in progress, Please try again after 3-4 minutes."+"\n"+"OR"+"\n"+ "If connected to internet please Logout and Login back again !!",Snackbar.LENGTH_LONG);
+                View snackbarView = snackbar.getView();
+                TextView tv = (TextView) snackbarView.findViewById(android.support.design.R.id.snackbar_text);
+                tv.setTextColor(getResources().getColor(R.color.dashboard_count_color));
+                tv.setMaxLines(5);
+                //tv.setTextSize(17);
+                //tv.setGravity(0);
+                //snackbarView.setBackgroundColor(getResources().getColor(R.color.newblack));
                 snackbar.show();
                 progressDialog.dismiss();
             }

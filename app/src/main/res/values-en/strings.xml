@@ -42,6 +42,21 @@
     <string name="thankYou">Thank You</string>
     <string name="addParticipant">Add Participant</string>
 
-
+    <string name="contactform">Contact Form</string>
+    <string name="contactDate">Contact Date :</string>
+    <string name="contactTime">Contact Time :</string>
+    <string name="typeOfContact">Type of Contact :</string>
+    <string name="PurposeofContact">Purpose of Contact :</string>
+    <string name="ScheduledDate">Scheduled Date :</string>
+    <string name="ScheduledTime">Scheduled Time :</string>
+    <string name="InterviewMethod">Interview Method :</string>
+    <string name="formComment">Form Comment :</string>
+    <string name="submit">Submit</string>
+    <string name="gotohome">Go to Home</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dontknow">Dont know</string>
+    <string name="refusal">Refusal</string>
+    <string name="reset">Reset</string>
 
 </resources>

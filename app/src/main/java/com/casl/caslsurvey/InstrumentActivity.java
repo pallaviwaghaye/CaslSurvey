@@ -124,6 +124,8 @@ public class InstrumentActivity extends MainActivity {
         zoomView.addView(childLayout);
         instrumentListView = (ListView)findViewById(R.id.my_list_view2);
         TextView tv = (TextView)findViewById(R.id.participant);
+        TextView contact = (TextView)findViewById(R.id.contact);
+
         //progressDialog = new ProgressDialog(this);
         //listview adapter
         adapter = new ArrayAdapter<Instrument>(this, R.layout.instrument_item, new ArrayList<Instrument>()){
@@ -177,6 +179,8 @@ public class InstrumentActivity extends MainActivity {
         getInstrumentFromLocal();
         //getInstrumentFromServer();
         tv.setText(Html.fromHtml("Click Here To Verify <u>"+ pt.toString()+"</u>"));
+        contact.setText(Html.fromHtml("Click Here To Fill Out The Contact Form <u>"+ pt.toString()+"</u>"));
+
         //set onclick to open instrument
         instrumentListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -203,6 +207,18 @@ public class InstrumentActivity extends MainActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ScreenSlideActivity.class);
+                intent.putExtra(InterviewActivity.PID,pt);
+                intent.putExtra(InterviewActivity.IID,interviewId);
+                intent.putExtra("Interview",istr);
+                intent.putExtra("position",-1);
+                startActivity(intent);
+            }
+        });
+
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ContactActivity.class);
                 intent.putExtra(InterviewActivity.PID,pt);
                 intent.putExtra(InterviewActivity.IID,interviewId);
                 intent.putExtra("Interview",istr);

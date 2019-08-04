@@ -107,7 +107,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+
     }
+
+   /* @Override
+    protected void onResume() {
+        askPermission();
+        super.onResume();
+    }*/
 
     private void askPermission() {
         if (!checkPermission()) {

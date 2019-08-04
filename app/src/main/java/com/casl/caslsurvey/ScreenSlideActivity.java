@@ -143,6 +143,10 @@ public class ScreenSlideActivity extends MainActivity implements QuestionListFra
             if (instList==null){
                 return ParticipantFragment.create(pt.getId(),iid);
             }
+            /*else if(instList == null)
+            {
+                return ContactFragment.create(pt.getId(),iid);
+            }*/
 
             Instrument instrument = instrumentDao.load(instList[position]);
             getIntent().putExtra("position",mPager.getCurrentItem());

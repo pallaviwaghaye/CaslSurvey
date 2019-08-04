@@ -41,4 +41,21 @@
     <string name="note">नोट: हटाएं कार्रवाई केवल ऐप्स को स्थानीय डेटाबेस से डेटा निकाल देगी।</string>
     <string name="thankYou">धन्यवाद</string>
     <string name="addParticipant">प्रतिभागी जोड़ें</string>
+
+    <string name="contactform">संपर्क करें प्रपत्र</string>
+    <string name="contactDate">संपर्क तिथि :</string>
+    <string name="contactTime">संपर्क समय :</string>
+    <string name="typeOfContact">संपर्क का प्रकार :</string>
+    <string name="PurposeofContact">संपर्क का उद्देश्य :</string>
+    <string name="ScheduledDate">निर्धारित तिथि :</string>
+    <string name="ScheduledTime">नियत समय :</string>
+    <string name="InterviewMethod">साक्षात्कार विधि :</string>
+    <string name="formComment">प्रपत्र टिप्पणी :</string>
+    <string name="submit">जमा करें</string>
+    <string name="gotohome">होम</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="dontknow">पता नहीं</string>
+    <string name="refusal">इनकार</string>
+    <string name="reset">रीसेट</string>
 </resources>
