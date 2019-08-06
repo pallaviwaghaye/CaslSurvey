@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="pt"
+            type="com.casl.model.Participant"/>
+    </data>
+<TableLayout
+    android:id="@+id/langTable"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:text=""
+            android:layout_weight="0.2"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/lang_can"
+            android:layout_weight="0.5"
+            android:textSize="25sp"
+            android:text="Ability"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/lang_pre"
+            android:layout_weight="0.3"
+            android:textSize="25sp"
+            android:text="Preference"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:text="Speak"
+            android:layout_weight="0.2"
+            android:textSize="25dp"
+            android:padding="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <CheckBox
+                android:id="@+id/chkEng"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:textSize="25dp"
+                android:text="EN"
+                android:checked="@{pt.speakLanguage(0)}"
+                android:padding="3dp"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/chkPt"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:textSize="25dp"
+                android:checked="@{pt.speakLanguage(1)}"
+                android:text="普通"
+                android:padding="3dp"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/chkGd"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:padding="3dp"
+                android:gravity="center"
+                android:checked="@{pt.speakLanguage(2)}"
+                android:textSize="25dp"
+                android:text="廣東" />
+            <CheckBox
+                android:id="@+id/chkTs"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:padding="3dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:checked="@{pt.speakLanguage(4)}"
+                android:text="台山" />
+
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/lang_pre_speak"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:entries="@array/langSpeak_arrays"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:text="Read"
+            android:layout_weight="0.2"
+            android:textSize="25dp"
+            android:padding="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <CheckBox
+                android:id="@+id/chkEng_read"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:textSize="25dp"
+                android:text="EN"
+                android:checked="@{pt.readLanguage(0)}"
+                android:padding="3dp"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/chkjianti_read"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:textSize="25dp"
+                android:checked="@{pt.readLanguage(3)}"
+                android:text="简"
+                android:padding="3dp"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/chkfanti_read"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:padding="3dp"
+                android:gravity="center"
+                android:checked="@{pt.readLanguage(5)}"
+                android:textSize="25dp"
+                android:text="繁" />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/lang_pre_read"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:entries="@array/langRW_arrays" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:text="Write"
+            android:layout_weight="0.2"
+            android:textSize="25dp"
+            android:padding="3dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <CheckBox
+                android:id="@+id/chkEng_write"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:textSize="25dp"
+                android:text="EN"
+                android:padding="3dp"
+                android:checked="@{pt.writeLanguage(0)}"
+                android:gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/chkjianti_write"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:textSize="25dp"
+                android:text="简"
+                android:checked="@{pt.writeLanguage(3)}"
+                android:padding="3dp"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/chkfanti_write"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:background="@drawable/segment_button"
+                android:button="@null"
+                android:padding="3dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:checked="@{pt.writeLanguage(5)}"
+                android:text="繁" />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/lang_pre_write"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:entries="@array/langRW_arrays"
+        />
+    </TableRow>
+    <TableRow>
+
+    </TableRow>
+</TableLayout>
+</layout>

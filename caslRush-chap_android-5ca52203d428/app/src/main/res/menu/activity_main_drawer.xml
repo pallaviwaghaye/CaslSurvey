@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Interviews">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_interviews"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Manage Downloaded" />-->
+
+            <item
+                android:id="@+id/nav_refresh"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/reload"/>
+        </menu>
+    </item>
+    <item android:title="Language">
+        <menu>
+            <item
+                android:id="@+id/nav_en"
+                android:icon="@drawable/ic_language_black_24dp"
+                android:title="English" />
+            <item
+                android:id="@+id/nav_tr"
+                android:icon="@drawable/ic_language_black_24dp"
+                android:title="繁體中文" />
+            <!--traditional Chinese-->
+            <item
+                android:id="@+id/nav_ch"
+                android:icon="@drawable/ic_language_black_24dp"
+                android:title="简体中文" />
+            <!--Simplified Chinese-->
+            <item
+                android:id="@+id/nav_hi"
+                android:icon="@drawable/ic_language_black_24dp"
+                android:title="Hindi" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item3"
+        android:title="User"
+        >
+
+        <menu>
+            <!--<item
+                android:id="@+id/nav_clearall"
+                android:icon="@drawable/ic_clear_all_black_24dp"
+                android:title="Clear All"/>-->
+            <item
+                android:id="@+id/nav_add_participant"
+                android:icon="@drawable/ic_add_circle_black_24dp"
+                android:title="@string/addParticipant" />
+
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_arrow_drop_down_circle_black_24dp"
+                android:title="Sign Out" />
+
+            <!--<item
+                android:id="@+id/nav_thanks"
+                android:icon="@drawable/ic_arrow_drop_down_circle_black_24dp"
+                android:title="Thanks" />-->
+        </menu>
+    </item>
+</menu>

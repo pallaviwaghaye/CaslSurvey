@@ -3,6 +3,7 @@
     <string-array name="state">
         <!--<item>Select state</item>
         <item>None</item>-->
+        <item>Select</item>
         <item>Alabama</item>
         <item>Alaska</item>
         <item>Arizona</item>
@@ -53,6 +54,7 @@
         <item>West Virginia</item>
         <item>Wisconsin</item>
         <item>Wyoming</item>
+        <item>Out of Country</item>
     </string-array>
 
     <string-array name="streetDirection">
@@ -138,9 +140,6 @@
     </string-array>
 
     <string-array name="bornCountry">
-        <!--<item>Select state</item>
-        <item>None</item>-->
-
         <item>Mainland China</item>
         <item>Hong Kong/Macau</item>
         <item>Taiwan</item>
@@ -152,6 +151,110 @@
         <item>USA</item>
         <item>Canada</item>
         <item>Other</item>
-
     </string-array>
+
+    <string-array name="TypeofContact">
+        <item>Select</item>
+        <item>In-person</item>
+        <item>Telephone</item>
+        <item>Letter</item>
+    </string-array>
+
+    <string-array name="PurposeofContact">
+        <item>Select</item>
+        <item>Request participation in a study activity</item>
+        <item>Schedule or confirm study appointment</item>
+        <item>Collect study data</item>
+        <item>Provide study information/Answer subject or family study questions</item>
+        <item>Contact requested or initiated by subject</item>
+        <item>Appointment cancellation</item>
+        <item>Gather subjects contact information from family members/trusted others</item>
+    </string-array>
+
+    <string-array name="NoContact">
+        <item>Select Reason</item>
+        <item>Not at home</item>
+        <item>Wrong telephone number</item>
+        <item>Nobody pick up phone</item>
+        <item>Not able to answer</item>
+        <item>Moved to other parts of city</item>
+        <item>Moved to suburbs</item>
+        <item>Moved out of state</item>
+        <item>Moved out of country</item>
+        <item>Moved unknown</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="CauseofDeath">
+        <!--<item>Select</item>-->
+        <item>Heart Disease</item>
+        <item>Cancer</item>
+        <item>Cerebrovascular Disease</item>
+        <item>Lung Disease</item>
+        <item>Kidney Disease</item>
+        <item>Accident</item>
+        <item>Infection</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="WhereWhenDied">
+        <item>Select</item>
+        <item>Own home</item>
+        <item>Family members home</item>
+        <item>Nursing home</item>
+        <item>Hospital</item>
+        <item>Emergency Room</item>
+        <item>Rehab center</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="WhomeConversation">
+        <item>Select Whom</item>
+        <item>Spouse</item>
+        <item>Ex-spouse</item>
+        <item>Romantic partner</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Son-in-law</item>
+        <item>Daughter-in-law</item>
+        <item>Step-child</item>
+        <item>Grandson</item>
+        <item>Granddaughter</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Father-in-law</item>
+        <item>Mother-in-law</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Other family member</item>
+        <item>Trusted friend</item>
+        <item>Other trusted person</item>
+        <item>Neighbor</item>
+        <item>Caretaker from outside</item>
+        <item>Caretaker from nursing home</item>
+        <item>Banker</item>
+        <item>Lawyer</item>
+        <item>City or State worker</item>
+        <item>Salesman</item>
+        <item>Contractor to fix house</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Opinion_OR_ExpressPerson">
+        <item>Select</item>
+        <item>Mild unspoken reluctance</item>
+        <item>Mild overt reluctance</item>
+        <item>Moderate reluctance</item>
+        <item>Strong reluctance</item>
+        <item>Strong reluctance with hostile comments</item>
+    </string-array>
+
+    <string-array name="InterviewMethod">
+        <item>Select</item>
+        <item>In-person</item>
+        <item>Phone</item>
+        <item>Mailed-in</item>
+        <item>Online</item>
+    </string-array>
+
 </resources>
