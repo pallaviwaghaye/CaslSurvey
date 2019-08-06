@@ -9,8 +9,10 @@ import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,6 +39,7 @@ import com.casl.model.Participant;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -79,6 +82,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
 
     private RecyclerView recyclerViewCauseofDeath;
    // private Spinner spinnerCauseofDeath;
+
     private EditText editTextWhenDie;
     private TextView textViewPriorDeathYes;
     private TextView textViewPriorDeathNo;
@@ -119,7 +123,9 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
     String selectedTypeOfContact;
     String selectedPurposeOfContact;
     String selectedNoContact;
+
    // String selectedCauseOfDeath;
+
     String selectedWhereWhenDied;
     String selectedState;
     String selectedWhomConversation;
@@ -138,6 +144,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
     private String[] interviewMethod;
     private Button buttonReset;
     MappingData mappingData; // = new MappingData();
+
 
     List<String> causeOfDeathList;
 
@@ -404,15 +411,15 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
             setSpinnerSelection(0, spinnerInterviewMethod);
         }
 
-        //
-       /* if (contact1.getDieCause() != null) {
+
+
+        /*if (contact1.getDieCause() != null) {
             int index = causeOfDeathList.indexOf(reverseMapping.getDieCause(contact1.getDieCause()));
             setSpinnerSelection(index, spinnerCauseofDeath);
         } else {
             setSpinnerSelection(0, spinnerCauseofDeath);
         }*/
 
-        //
         if (contact1.getDiePlace() != null) {
             int index = whereWhenDiedList.indexOf(reverseMapping.getDiePlace(contact1.getDiePlace()));
             setSpinnerSelection(index, spinnerWhereWhenDied);
@@ -576,7 +583,9 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
             }
         });
 
-       /* spinnerCauseofDeath.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+        /*spinnerCauseofDeath.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 if (position != 0) {
@@ -592,7 +601,9 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
+
         });*/
+
 
         spinnerWhereWhenDied.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -748,6 +759,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
 
         recyclerViewCauseofDeath = (RecyclerView)findViewById(R.id.recyclerViewCauseofDeath);
        // spinnerCauseofDeath = (Spinner) findViewById(R.id.spinnerCauseofDeath);
+
         spinnerWhereWhenDied = (Spinner) findViewById(R.id.spinnerWhereWhenDied);
         spinnerState = (Spinner) findViewById(R.id.spinnerState);
         spinnerWithWhome = (Spinner) findViewById(R.id.spinnerWithWhome);
@@ -917,6 +929,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
                 contact1.setDeath(mappingData.get_Death_NursHome(textViewDeathNo.getText().toString()));
 
                // spinnerCauseofDeath.setSelection(0, false);
+
                 editTextWhenDie.setText("");
                 spinnerWhereWhenDied.setSelection(0, false);
                 spinnerState.setSelection(0, false);
@@ -939,7 +952,9 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
                 textViewDeathRF.setBackgroundColor(getResources().getColor(R.color.offwhite));
                 contact1.setDeath(mappingData.get_Death_NursHome(textViewDeathDK.getText().toString()));
 
+
              //   spinnerCauseofDeath.setSelection(0, false);
+
                 editTextWhenDie.setText("");
                 spinnerWhereWhenDied.setSelection(0, false);
                 spinnerState.setSelection(0, false);
@@ -962,7 +977,9 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
                 textViewDeathRF.setBackgroundColor(getResources().getColor(R.color.brown));
                 contact1.setDeath(mappingData.get_Death_NursHome(textViewDeathRF.getText().toString()));
 
+
              //   spinnerCauseofDeath.setSelection(0, false);
+
                 editTextWhenDie.setText("");
                 spinnerWhereWhenDied.setSelection(0, false);
                 spinnerState.setSelection(0, false);
@@ -1126,7 +1143,9 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
 
                 if (contact1.getDeath().equalsIgnoreCase(getResources().getString(R.string.yes))) {
                     contact1.setDieDate(editTextWhenDie.getText().toString());
+
                   //  contact1.setDieCause(selectedCauseOfDeath);
+
                     contact1.setNursHome(contact1.getNursHome());
                     contact1.setDiePlace(selectedWhereWhenDied);
                     contact1.setDieState(selectedState);

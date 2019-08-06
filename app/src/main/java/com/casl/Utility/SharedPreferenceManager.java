@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
+
 public class SharedPreferenceManager {
     private static Context applicationContext;
     private static SharedPreferences caslSurveyPreferences;

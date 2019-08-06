@@ -8,6 +8,7 @@ import cz.msebera.android.httpclient.entity.StringEntity;
 
 public class RestClient {
     //10.0.2.2:8080
+
     private static String baseURL = "http://ec2-18-185-23-48.eu-central-1.compute.amazonaws.com/";
     //private static String baseURL = "http://chinesehealthyaging.org/chapRest/";
 
