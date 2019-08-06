@@ -124,7 +124,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
     String selectedPurposeOfContact;
     String selectedNoContact;
 
-   // String selectedCauseOfDeath;
+    String selectedCauseOfDeath;
 
     String selectedWhereWhenDied;
     String selectedState;
@@ -147,6 +147,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
 
 
     List<String> causeOfDeathList;
+    CauseofDeathAdapter causeofDeathAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -486,12 +487,14 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
         for (int i = 0; i < causeOfDeath.length; i++) {
             String data = causeOfDeath[i];
             causeOfDeathList.add(data);
+
         }
         //ArrayAdapter<String> adapterCauseofDeath = new ArrayAdapter<String>(ContactActivity.this, android.R.layout.simple_spinner_dropdown_item, causeOfDeath);
         //spinnerCauseofDeath.setAdapter(adapterCauseofDeath);
         LinearLayoutManager layoutManager = new LinearLayoutManager(ContactActivity.this, LinearLayoutManager.HORIZONTAL, false);
         recyclerViewCauseofDeath.setLayoutManager(layoutManager);
-        recyclerViewCauseofDeath.setAdapter(new CauseofDeathAdapter(ContactActivity.this, causeOfDeathList));
+        causeofDeathAdapter = new CauseofDeathAdapter(ContactActivity.this,causeOfDeathList);
+        recyclerViewCauseofDeath.setAdapter(causeofDeathAdapter);
 
         whereWhenDied = getResources().getStringArray(R.array.WhereWhenDied);
         ArrayAdapter<String> adapterWhereWhenDied = new ArrayAdapter<String>(ContactActivity.this, android.R.layout.simple_spinner_dropdown_item, whereWhenDied);
@@ -929,6 +932,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
                 contact1.setDeath(mappingData.get_Death_NursHome(textViewDeathNo.getText().toString()));
 
                // spinnerCauseofDeath.setSelection(0, false);
+                recyclerViewCauseofDeath.setAdapter(null);
 
                 editTextWhenDie.setText("");
                 spinnerWhereWhenDied.setSelection(0, false);
@@ -954,6 +958,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
 
 
              //   spinnerCauseofDeath.setSelection(0, false);
+                recyclerViewCauseofDeath.setAdapter(null);
 
                 editTextWhenDie.setText("");
                 spinnerWhereWhenDied.setSelection(0, false);
@@ -979,6 +984,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
 
 
              //   spinnerCauseofDeath.setSelection(0, false);
+                recyclerViewCauseofDeath.setAdapter(null);
 
                 editTextWhenDie.setText("");
                 spinnerWhereWhenDied.setSelection(0, false);
@@ -1143,6 +1149,7 @@ public class ContactActivity extends MainActivity implements View.OnClickListene
 
                 if (contact1.getDeath().equalsIgnoreCase(getResources().getString(R.string.yes))) {
                     contact1.setDieDate(editTextWhenDie.getText().toString());
+
 
                   //  contact1.setDieCause(selectedCauseOfDeath);
 

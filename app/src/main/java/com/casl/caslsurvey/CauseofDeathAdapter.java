@@ -41,13 +41,20 @@ class CauseofDeathAdapter extends RecyclerView.Adapter<CauseofDeathAdapter.ViewH
        // list.get(position);
         viewHolder.textViewCauseofDeath.setText(list.get(position));
 
+        //viewHolder.cardView.setSelected(true);
+
         viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch(position)
                 {
                     case 0:
-                        viewHolder.textViewCauseofDeath.setBackgroundColor(context.getResources().getColor(R.color.brown));
+                        /*if(list.get(0).equalsIgnoreCase("Heart Disease")) {
+                            */
+                            viewHolder.textViewCauseofDeath.setBackgroundColor(context.getResources().getColor(R.color.brown));
+                       /* }else{
+
+                        }*/
                         break;
                     case 1:
                         viewHolder.textViewCauseofDeath.setBackgroundColor(context.getResources().getColor(R.color.brown));
